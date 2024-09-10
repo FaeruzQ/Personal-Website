@@ -550,7 +550,7 @@ text-align: center;
 
 
 
-@media (max-width: 576px) {
+@media (max-width: 1080px) {
     .box{
         margin-top: 20vh;
         height: 60vh;
