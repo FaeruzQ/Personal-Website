@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Pearuz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+<div class="box">
+    <div class="bg2">
+        <div class="main">
+            <nav class="navbar">
+                <div class="container">
+                    <a class="brand"> 
+                        <H1>Web Developer</H1>   
+                    </a>
+                    <ul class="menu" id="navbar">
+                        <li><a class="btn active" href="#" onclick="showSection('about')">About</a></li>
+                        <li><a class="btn" href="#" onclick="showSection('portofolio')">Portofolio</a></li>
+                        <li><a class="btn" href="#" onclick="showSection('experience')">Experience</a></li>
+                        <li><a class="btn" href="#" onclick="showSection('skills')">Skills</a></li>
+                    </ul>
+                </div>
+            </nav>
+                <div class="container-content">
+                        <!-- <img class="foto-prof" src="Qobus.png" alt="" height="400px" width="300px" >       -->
+                        <img class="foto-prof" src="Qobus.png" alt="" >      
+                    <div class="content">
+                        <div id="about" class="section active-section">
+                            <!-- <H2>About</H2> -->
+                            <H1 class="myName">Qubussima Faeroz Furqona</H1>
+                            <p class="description">
+                                I am a passionate web developer with a strong foundation in front-end and back-end technologies. I specialize in creating responsive and user-friendly websites that offer a seamless experience across different devices. With a keen eye for detail and a deep understanding of modern web development trends, I strive to deliver high-quality solutions that meet client needs.
+    
+                                Over the years, I have worked on various projects, ranging from simple landing pages to complex web applications. My expertise includes HTML, CSS, JavaScript, PHP, and MySQL. I am always eager to learn new tools and technologies to enhance my skill set and contribute to innovative projects.
+                                
+                                In addition to web development, I have a strong interest in UX/UI design and strive to ensure that the websites I build are not only functional but also visually appealing. I believe in the importance of continuous improvement and am constantly exploring new ways to improve my coding practices and keep up with the latest industry standards.
+                            </p>
+                            <p>Email : pearuz69@gmail.com</p>
+                        </div>
+    
+                        <div id="portofolio" class="section">
+                            <H1>Portofolio</H1>
+                            <p>Here are some of my projects.</p>
+                        </div>
+    
+                        <div id="experience" class="section">
+                            <H1>Experience</H1>
+                            <p>I have worked on several exciting projects.</p>
+                        </div>
+    
+                        <div id="skills" class="section">
+                            <H1>Skills</H1>
+                            <p>Here are some of the skills I have acquired.</p>
+                            <div class="skills-bar">
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>HTML</span>
+                                    </div>
+                                    <div class="progress-line html"><span></span></div>
+                                </div>
+    
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>CSS</span>
+                                    </div>
+                                    <div class="progress-line css"><span></span></div>
+                                </div>
+    
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>JavaScript</span>
+                                    </div>
+                                    <div class="progress-line js"><span></span></div>
+                                </div>
+    
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>PHP</span>
+                                    </div>
+                                    <div class="progress-line php"><span></span></div>
+                                </div>
+    
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>MySQL</span>
+                                    </div>
+                                    <div class="progress-line mysql"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <ul class="sosmed" id="sosmed">
+                            <li><a href="https://web.facebook.com/pearuz"><img class="fb" src="Resource/Facebook.png" alt=""></a></li>
+                            <li><a href="https://www.instagram.com/faeruz_q/"><img class="ig" src="Resource/ig.png" alt=""></a></li>
+                            <li><a href="https://www.youtube.com/@faeruzq5608"><img class="yt" src="Resource/yt.png" alt=""></a></li>
+                        </ul>
+                    </div> <!-- end div "content" -->  
+                </div> <!-- end div "container" -->
+        </div>
+    </div>
+    
+</div>
+</body>
+
+<script>
+    // var btnContainer = document.getElementById("navbar");
+    // var btns = btnContainer.getElementsByClassName("btn");
+
+    // for(var i = 0; i < btns.length; i++){
+    //     btns[i].addEventListener('click', function(){
+    //         var current = document.getElementsByClassName("active");
+    //         current[0].className = current[0].className.replace(" active");
+    //         this.className += " active";
+    //     })
+    // }
+
+    function showSection(sectionId) {
+        // Hide all sections
+        var sections = document.getElementsByClassName('section');
+        for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+
+        // Show the selected section
+        document.getElementById(sectionId).style.display = 'block';
+
+        // Set active class on clicked button
+        var btnContainer = document.getElementById("navbar");
+        var btns = btnContainer.getElementsByClassName("btn");
+
+        for(var i = 0; i < btns.length; i++){
+        btns[i].addEventListener('click', function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active");
+            this.className += " active";
+        })
+        }
+
+        var sosmed = document.getElementById("sosmed");
+        if (sectionId === 'about') {
+            sosmed.style.display = 'flex';  // Show sosmed
+        } else {
+            sosmed.style.display = 'none';  // Hide sosmed
+        }
+    }
+
+    // Show only the "About" section by default
+    document.addEventListener('DOMContentLoaded', function() {
+        showSection('about');
+    });
+</script>
+
+</html>
