@@ -4,24 +4,6 @@
     padding: 0px;
 }
 
-body { 
-    margin : 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    /* background: rgb(0, 226, 226); */
-    /* background: linear-gradient(
-    to right,
-    rgb(0, 226, 226) 0%,
-    rgb(0, 226, 226) 20%,
-    white 20%,
-    white 100%
-    ); */
-    /* background-color: #e5e5f7;
-    background-size: 10px 10px;
-    background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 1px, #e5e5f7 0, #e5e5f7 50%); */
-}
-
-
 
 .background {
     position: fixed;
@@ -231,6 +213,28 @@ body {
     transform-origin: 25vw -20vh;
     box-shadow: -40vmin 0 5.894008882290416vmin currentColor;
 }
+
+body { 
+    margin : 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    /* background: rgb(0, 226, 226); */
+    /* background: linear-gradient(
+    to right,
+    rgb(0, 226, 226) 0%,
+    rgb(0, 226, 226) 20%,
+    white 20%,
+    white 100%
+    ); */
+    /* background-color: #e5e5f7;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 1px, #e5e5f7 0, #e5e5f7 50%); */
+    display: flex;
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
+}
+
 .box{
     display: flex;  /* Aktifkan Flexbox */
     justify-content: center; /* Pusatkan secara horizontal */
@@ -248,10 +252,10 @@ body {
     /* width: 1200px;
     height: 600px; */
     width:85vw;
-    height: 92.25vh;
+    height: 87.25vh;
     margin: auto;
     position: relative;
-    margin-top: 1.4vw;
+    margin-top: 6vh;
     box-shadow: 0 0.28vw 2.1vw rgba(0, 0, 0, 0.2); /* Shadow dengan arah horizontal */  
 }
 
@@ -271,7 +275,6 @@ body {
     height: 550px; */
     width: 80.5vw;
     height: 84.90vh;
-    
 }
 
 .container{
@@ -286,7 +289,7 @@ body {
     border-style: solid;
     /* height: 30px;
     width: 200px; */
-    height: 5vh;
+    height: 4vh;
     width: 15vw;
     background:#FFC265 ;
     color: black;
@@ -298,7 +301,7 @@ body {
 }
 
 .brand H1{
-    margin-top: 0.5vh;
+    /* margin-top: 0.5vh; */
 }
 
 .menu{
@@ -548,65 +551,204 @@ text-align: center;
     content: "40%";
 }
 
-@media (max-width: 1080px) {
+
+
+@media screen and (min-width: 1544px){
+
     .box{
-        margin-top: 20vh;
-        height: 35vh;
+        height: 87.25vh;
+        margin-top: 6vh;
+    }
+
+    .main{
+        height: 81.90vh;
     }
 
     .brand{
-        margin-top: 1.5vw;
-        height: 3vw;
+        height: 3.5vh;
+    }
+}
+
+@media screen and (max-width: 1366px){
+    .box{
+        height: 85.25vh;
     }
 
-    .container{
-        font-size: 1.67vw;
+    .main{
+        height: 80.90vh;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .box{
+        height: 83.25vh;
+        margin-top: 6vh;
+    }
+
+    .main{
+        height: 79.90vh; 
+    }
+}
+
+@media screen and (max-width: 1144px){
+    .box{
+        height: 30vh;
+        margin-top: 10vh;
+    }
+
+    .main{
+        height: 25.90vh;
+    }
+
+    .brand{
+        height: 1.25vh;
+    }
+    
+    .content H1{
+        /* margin-top: 40px; */
+        margin-top: 1vh;
+    } 
+}
+
+@media screen and (max-width: 1080px){
+    .box{
+        height: 25vh;
+        margin-top: 10vh;
+    }
+
+    .main{
+        height: 20.90vh;
+    }
+    .brand{
+        height: 1vh;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .box{
+        height: 75vh;
+        margin-top: 10vh;
+    }
+
+    .main{
+        height: 70.90vh;
+    }
+    .brand{
+        height: 3.5vh;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .box{
+        height: 35vh;
+        margin-top: 10vh;
+    }
+
+    .main{
+        height: 31.90vh;
+    }
+    .brand{
+        height: 1.5vh;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .box{
+        height: 55vh;
+        margin-top: 10vh;
+    }
+
+    .main{
+        height: 50.90vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .box{
+        height: 40vh;
+        margin-top: 10vh;
+    }
+
+    .main{
+        height: 35.90vh;
+    }
+
+    .brand{
+        height: 1.5vh;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .box{
+        height: 30vh;
+        margin-top: 10vh;
+    }
+
+    .main{
+        height: 25.90vh;
+    }
+
+    .brand{
+        height: 1.25vh;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .box{
+        height: 22vh;
+        margin-top: 10vh;
+    }
+
+    .main{
+        height: 18.90vh;
+    }
+
+    .brand{
+        height: 1vh;
     }
 
     .content H1{
+        /* margin-top: 40px; */
         margin-top: 1vh;
+    } 
+}
+
+@media screen and (max-width: 375px){
+    .box{
+        height: 26vh;
+        margin-top: 10vh;
     }
 
-    .content p{
-        font-size: 1.75vw;
-        margin-right: 1.2vw;
+    .main{
+        height: 22.90vh;
     }
 
-    .foto-prof{
-        margin-top: 3.5vh;
+    .brand{
+        height: 1.2vh;
     }
 
-    #skills H1{
-        margin-top: 4vh;
+    .content H1{
+        /* margin-top: 40px; */
+        margin-top: 1vh;
+    } 
+}
+
+@media screen and (max-width: 360px){
+    .box{
+        height: 22vh;
+        margin-top: 10vh;
     }
 
-    .sosmed{
-        margin-top:1vh;
+    .main{
+        height: 19.90vh;
     }
 
-    .bar .progress-line span::before{
-        position: absolute;
-        content: "";
-        right: 0;
-        top: -0.7vw;
-        height: 0;
-        width: 0;
-        border: 0.7vw solid transparent;
-        border-bottom-width: 0px;
-        border-right-width: 0px;
-        border-top-color: #000;
+    .brand{
+        height: 1vh;
     }
-    .bar .progress-line span::after{
-        position: absolute;
-        /* content: "80%"; */
-        right: 0;
-        top: -2.18vw;
-        color: #fff;
-        font-size: 1.3vw;
-        background: #000;
-        padding: 0.07vw 0.56vw;
-        border-radius: 0.21vw;
-        opacity: 0;
-        animation: showText2 0.5s 1.5s linear forwards;
-    }
+
+    .content H1{
+        /* margin-top: 40px; */
+        margin-top: 1vh;
+    } 
 }
