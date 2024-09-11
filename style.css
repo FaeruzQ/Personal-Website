@@ -551,9 +551,23 @@ text-align: center;
     content: "40%";
 }
 
+@media screen and (min-width: 2400px){
 
+    .box{
+        height: 95.25vh;
+        margin-top: 2.5vh;
+    }
 
-@media screen and (min-width: 1544px){
+    .main{
+        height: 87.90vh;
+    }
+
+    .brand{
+        height: 5vh;
+    }
+}
+
+@media screen and (max-width: 1544px){
 
     .box{
         height: 87.25vh;
