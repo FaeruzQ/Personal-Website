@@ -181,11 +181,11 @@ body {
         transform: scaleX(1);
     }
 }
-.progress-line.html span { width: 60%; }
-.progress-line.css span { width: 50%; }
-.progress-line.js span { width: 30%; }
-.progress-line.php span { width: 30%; }
-.progress-line.mysql span { width: 40%; }
+.progress-line.html span { width: 80%; }
+.progress-line.css span { width: 70%; }
+.progress-line.js span { width: 50%; }
+.progress-line.php span { width: 50%; }
+.progress-line.mysql span { width: 60%; }
 .section {
     display: none;
 }
@@ -286,7 +286,7 @@ body {
         margin: 0;
         position: static;
         transform: none;
-        background-color: transparent; 
+        background-color: rgba(255, 255, 255, 0.501);
     }
     .bg2 {
         display: none;
